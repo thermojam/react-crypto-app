@@ -1,5 +1,7 @@
-
 import { Layout } from 'antd';
+
+import CardApp from "./components/layout/card.jsx";
+
 
 const headerStyle = {
     textAlign: 'center',
@@ -25,6 +27,7 @@ const siderStyle = {
 };
 
 
+
 export default function App() {
 
     return (
@@ -34,7 +37,12 @@ export default function App() {
                 <Layout.Sider width="25%" style={siderStyle}>
                     Sider
                 </Layout.Sider>
-                <Layout.Content style={contentStyle}>Content</Layout.Content>
+                <Layout.Content style={contentStyle}> Content
+                    <CardApp/>
+                    <CardApp/>
+                    <CardApp/>
+                    <CardApp/>
+                </Layout.Content>
             </Layout>
         </Layout>
     )
